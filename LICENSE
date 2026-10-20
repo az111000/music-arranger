@@ -1,0 +1,7 @@
+Copyright (c) 2026 Anthony Zhu. All rights reserved.
+
+This repository and its contents may not be copied, modified, or
+redistributed without the prior written permission of the copyright holder.
+
+Third-party libraries in the lib/ folder (abcjs, Spotify Basic Pitch,
+TensorFlow.js) remain under their own open-source licenses.
