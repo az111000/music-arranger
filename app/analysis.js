@@ -479,7 +479,8 @@
         else if (m.type === 'error') finish(reject, { fallback: !started, error: m.message });
       };
       const audio = x.slice();
-      const msg = { type: 'run', audio, opts: toNotesOpts, returnFrames: !!extra.returnFrames };
+      // WebAssembly first: the WebGL backend can stall in a worker on some GPUs
+      const msg = { type: 'run', audio, opts: toNotesOpts, returnFrames: !!extra.returnFrames, backends: ['wasm', 'webgl', 'cpu'] };
       if (extra.frames) { msg.frames = extra.frames; msg.onsets = extra.onsets; }
       w.postMessage(msg, [audio.buffer]);
     });
