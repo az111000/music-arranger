@@ -1,4 +1,4 @@
-/* Partitura Studio — songs from a name instead of a recording.
+/* Music Arranger — songs from a name instead of a recording.
    A small library of public-domain tunes written out by hand (melody + chord symbols in ABC),
    plus a converter that turns any ABC tune into the same "analysis" object a recording produces,
    so the arranger, editor, score and exports work unchanged.  Global: Songs */

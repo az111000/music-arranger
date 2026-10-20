@@ -191,7 +191,7 @@
     L.push('X:1');
     L.push('T:' + (project.title || 'Arrangement').replace(/\n/g, ' '));
     if (opts.subtitle) L.push('T:' + opts.subtitle);
-    L.push('C:' + (opts.composerLine || 'Arranged in Partitura Studio'));
+    L.push('C:' + (opts.composerLine || 'Arranged in Music Arranger'));
     L.push('M:' + ts.num + '/' + ts.den);
     L.push('L:1/16');
     const qUnit = ts.compound ? '3/8' : (ts.den === 8 ? '1/8' : '1/4');
@@ -281,7 +281,7 @@
       p.tr = opts.concert ? null : TRANSPOSING[p.inst] || null;
     });
     let x = '<?xml version="1.0" encoding="UTF-8" standalone="no"?>\n<!DOCTYPE score-partwise PUBLIC "-//Recordare//DTD MusicXML 3.1 Partwise//EN" "http://www.musicxml.org/dtds/partwise.dtd">\n<score-partwise version="3.1">\n';
-    x += '<work><work-title>' + esc(project.title || 'Arrangement') + '</work-title></work>\n<identification><creator type="arranger">Partitura Studio</creator><encoding><software>Partitura Studio</software></encoding></identification>\n<part-list>\n';
+    x += '<work><work-title>' + esc(project.title || 'Arrangement') + '</work-title></work>\n<identification><creator type="arranger">Music Arranger</creator><encoding><software>Music Arranger</software></encoding></identification>\n<part-list>\n';
     let famOpen = null;
     const famOf = p => p.key === 'piano' ? 'keys' : T.INSTR[p.inst]?.family;
     parts.forEach((p, i) => {

@@ -1,4 +1,4 @@
-/* Partitura Studio — application shell: project state, settings, parts, piano roll, score, recording view,
+/* Music Arranger — application shell: project state, settings, parts, piano roll, score, recording view,
    transport, arranging assistant (Claude via the artifact `sample` capability), exports, autosave. */
 (function () {
   const $ = id => document.getElementById(id);

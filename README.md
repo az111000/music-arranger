@@ -1,4 +1,4 @@
-# Partitura Studio
+# Music Arranger
 
 A static web app for music transcription, notation, and orchestral arranging that runs in the browser.
 
